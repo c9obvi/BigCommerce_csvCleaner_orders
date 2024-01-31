@@ -1,8 +1,8 @@
 # CSV Cleaner Tool Guide
 
 This guide provides detailed instructions on how to use the `csvcleaner.py` Python script to clean a CSV file. The script extracts specific columns: Order ID, Order Status, Order Date, Customer Name, # Unique Products in Order, Product ID, Product QTY, Product SKU, and Product Name.
-
-**Note**: This tool is designed for MacOS and Linux (Unix-based systems).
+> [!NOTE] 
+> **Note**: This tool is designed for MacOS and Linux (Unix-based systems).
 
 ## Prerequisites
 
