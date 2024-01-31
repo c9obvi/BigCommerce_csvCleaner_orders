@@ -13,7 +13,7 @@ This guide provides instructions on how to use a Python script to clean a CSV fi
    Ensure the CSV file you want to process is the only file in a dedicated folder on your Desktop. The folder can have any name.
 
 2. **Script and Bash File**: 
-   The Python script and a bash file (`run_script.sh`) should be placed on your Desktop.
+   The Python script and a bash file (`./csvcleaner.sh`) should be placed on your Desktop.
 
 ## Running the Script
 
