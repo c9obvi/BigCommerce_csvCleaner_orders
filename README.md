@@ -24,7 +24,7 @@ This guide provides instructions on how to use a Python script to clean a CSV fi
    Use the command `cd ~/Desktop` to navigate to your Desktop.
 
 3. **Run the Bash Script**: 
-   Execute the bash script by typing `./run_script.sh`. This script will automatically find the CSV file in the specified folder, process it, and save the cleaned file on the Desktop.
+   Execute the bash script by typing `./csvcleaner.sh`. This script will automatically find the CSV file in the specified folder, process it, and save the cleaned file on the Desktop.
 
 ## Output
 
