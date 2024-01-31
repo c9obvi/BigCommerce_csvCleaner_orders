@@ -1,37 +1,38 @@
-# CSV Cleaning Tool Guide
+# CSV Cleaner Tool Guide
 
-This guide provides instructions on how to use a Python script to clean a CSV file, extracting only the necessary columns: Product ID, QTY, SKU, and Product Name.
+This guide provides instructions on how to use the `csvcleaner.py` Python script to clean a CSV file, extracting only the necessary columns: Order ID, Order Status, Order Date, Customer Name, # Unique Products in Order, Product ID, Product QTY, Product SKU, and Product Name.
 
 ## Prerequisites
 
-- Python installed on your system.
-- A CSV file to be processed.
+- Python must be installed on your system.
+- The `csvcleaner.py` script must be saved in your home directory.
 
 ## Setup
 
-1. **Place the CSV File**: 
-   Ensure the CSV file you want to process is the only file in a dedicated folder on your Desktop. The folder can have any name.
+1. **Python Script**: 
+   Make sure the `csvcleaner.py` script is stored in your home directory (`~/`).
 
-2. **Script and Bash File**: 
-   The Python script and a bash file (`./csvcleaner.sh`) should be placed on your Desktop.
+2. **Bash Script**: 
+   A bash script named `run_csv_cleaner.sh` should be placed on your Desktop.
+
+## Prepare Your CSV File
+
+- The CSV file you want to process must be the only file located in a folder named `raw_csv` on your Desktop.
 
 ## Running the Script
 
-1. **Open Terminal**: 
-   Open a terminal window.
+1. **Set Permissions**: 
+   Before running the script for the first time, set the execute permissions by running `chmod +x ~/Desktop/run_csv_cleaner.sh` in the terminal.
 
-2. **Navigate to Desktop**: 
-   Use the command `cd ~/Desktop` to navigate to your Desktop.
-
-3. **Run the Bash Script**: 
-   Execute the bash script by typing `./csvcleaner.sh`. This script will automatically find the CSV file in the specified folder, process it, and save the cleaned file on the Desktop.
+2. **Launch the Script**: 
+   Double-click the `run_csv_cleaner.sh` script on your Desktop or run it from the terminal.
 
 ## Output
 
-- The cleaned CSV file will be saved on the Desktop with the filename format: `BigCommerce Orders CSV (cleaned) [YYYY-MM-DD].csv`, where `[YYYY-MM-DD]` is the current date.
+- The cleaned CSV file will be saved on your Desktop with the filename format: `BigCommerce Orders CSV (cleaned) [YYYY-MM-DD].csv`, where `[YYYY-MM-DD]` is the current date.
 
 ## Troubleshooting
 
-- Ensure Python is correctly installed by running `python --version` in the terminal.
-- Make sure the bash script has execute permissions. You can set this with `chmod +x run_script.sh` on the terminal.
-- If there are any errors during the script execution, they will be displayed in the terminal.
+- If the script does not run when double-clicked, try running it from the terminal with `~/Desktop/run_csv_cleaner.sh`.
+- Make sure there are no additional CSV files in the `raw_csv` folder on your Desktop.
+- Ensure that the `csvcleaner.py` script is present in your home directory and not moved or renamed.
